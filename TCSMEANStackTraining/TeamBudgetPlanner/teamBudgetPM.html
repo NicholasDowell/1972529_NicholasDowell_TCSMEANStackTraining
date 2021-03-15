@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Budget Planner</title>
+    <script src="teamBudgetPlanner.js"></script>
+    <link rel="stylesheet" href="teamBudgetStyle.css">
+</head>
+<body>
+    <h4>
+        <a href="teamBudgetPlanner.html" style="text-decoration: none;"><b>Team Budget Planner</b> </a>- <small>Release your inner spreadsheet</small>
+    </h4>
+    <br/><br/><br/><br/><br/>
+    <h2 style="text-align: center;">Program Managers</h2>
+    <div>
+        <form id="entryForm">
+            Client name
+            <input type="text" id="clientName"><br/>
+            Project Name
+            <input type="text" id="projectName"><br/>
+            Budget
+            <input type="number" id="budget"><br/>
+            <input type="button" value="Save Project Details" onclick="saveInfoToSession()"><br/>
+            <input type="reset" value="clear fields">
+        </form> 
+    </div>
+    <br/><br/><br/><br/><br/>
+    <div>
+        <a href="teamBudgetPlanner.html">Back to Home Screen</a>
+    </div>
+
+</body>
+</html>

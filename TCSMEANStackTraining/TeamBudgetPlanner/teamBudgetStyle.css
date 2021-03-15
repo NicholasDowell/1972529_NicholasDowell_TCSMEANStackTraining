@@ -1,0 +1,17 @@
+#pageLink{
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(14, 77, 73) 4px;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+#budgetTable{
+    border: 6px solid rgb(14, 77, 73);
+    margin-left: auto;
+    margin-right: auto;
+}
+
