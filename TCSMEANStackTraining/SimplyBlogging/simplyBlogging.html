@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="simplyblogging.js"></script>
+    <link rel="stylesheet" href="simplyBlogging.css">
+</head>
+<body onload="loadUp()">
+    <div class="container " id="theGrid">
+        <div class="row">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Add Blog</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-8">
+                Title Bucket: Simply Blogging
+            </div>
+        </div>
+        <div class="row">
+            <br/>
+        </div>
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-4">
+                
+                New Blog: Enter a Title for your new blog!
+                <input type="text" id="title"/>
+                <br/>
+                New Blog: Add Image field
+                <input type="file" id="imageId" />
+                
+            </div>
+            <div class="col-7">
+                <div class="col-2">
+                </div>
+                <div class="col-8">
+                    New Blog: Add Your Text
+                    <textarea type="text" id="desc" rows="10" cols="90"></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-8">
+                
+            </div>
+        </div>
+        <div class="row">
+            
+            
+        </div>
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-11">
+                Add Blog Button
+                <input type="button" onclick="saveNewBlog()" value="Add Blog" class="btn btn-primary"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <br/>
+    </div>
+</body>
+</html>

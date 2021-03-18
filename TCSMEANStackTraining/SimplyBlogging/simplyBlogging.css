@@ -1,0 +1,16 @@
+.blogBox{
+    font-size: smaller;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 30%;
+    padding: 10px;
+    
+}
+
+.articleTitles{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.articleText{
+    padding: 10%;
+}
