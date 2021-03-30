@@ -1,0 +1,15 @@
+<div class="mb-3">
+    <form>
+        <h3>Log In</h3>
+        <h4>User Name <input type="text" class="form-control" #user/></h4>
+        <h4>Password <input type="text" class="form-control" #pass/></h4>
+        <input type="reset" 
+        value="Log In" 
+        routerLink="../portfolio" (click)="loginAttempt(user.value, pass.value)" 
+        class="btn btn-success"/>
+        <br/>
+        <hr/>
+        <h4>Don't have an account? <input type="button" value="Sign Up Today!" routerLink="../signup"> </h4>
+    
+    </form>
+</div>
