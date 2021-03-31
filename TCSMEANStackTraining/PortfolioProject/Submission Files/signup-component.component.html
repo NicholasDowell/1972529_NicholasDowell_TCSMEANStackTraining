@@ -1,0 +1,11 @@
+<div class="mb-3">
+    <form>
+        <h3>New User</h3>
+        <h6>Sign Up for a new account today</h6>
+        <h4>User Name <input type="text" class="form-control" #user/></h4>
+        <h4>Password  <input type="text" class="form-control" #pass/></h4>
+        <br/>
+        <button type="submit" 
+        (click)="registerUser(user.value, pass.value)" class="btn btn-success">Create Account</button>
+    </form>
+</div>
