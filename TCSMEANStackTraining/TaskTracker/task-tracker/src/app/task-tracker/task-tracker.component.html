@@ -1,0 +1,46 @@
+<div>
+    <h2>
+        Add new Task details
+    </h2>
+    <form #taskRef="ngForm" (ngSubmit)="storeTask(taskRef.value)">
+        <mat-form-field>
+            <mat-label>ID</mat-label>
+            <input matInput type="text" name="id" ngModel/>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label> Name </mat-label>
+            <input matInput type="text" name="name" ngModel/>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label> Task </mat-label>
+            <input matInput type="textarea" name="task" ngModel/>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label> Deadline </mat-label>
+            <input matInput type="date" name="deadline" ngModel/>
+        </mat-form-field>
+        <button mat-stroked-button color="mat-stroked-button" type="submit">Store</button>
+    </form>
+    
+
+</div>
+<div>
+    <h1> Current Task List</h1>
+    <mat-card class="cardClass">
+        <mat-card-header>
+            <mat-card-title>First Task id</mat-card-title>
+            <mat-card-subtitle>Rachel</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content> 
+            Tune the stock-market prediction algorithm
+        </mat-card-content>
+        <mat-card-actions>
+            <!--
+            <button mat-raised-button color="primary" (click)="fun()">Click Here</button>
+            -->
+        </mat-card-actions>
+    </mat-card>
+</div>
