@@ -27,7 +27,7 @@ let server = http.createServer((req,res)=>{
         res.setHeader("content-type","text/html");
         res.write(taskForm);
         if(true/*req.url=="/store"*/){
-            res.write("WAT");
+            res.write("Log > " + req.url);
             //urlDetails = req.url;
             //let data = url.parse(urlDetails, true).query;
             //console.log("data is " + data);

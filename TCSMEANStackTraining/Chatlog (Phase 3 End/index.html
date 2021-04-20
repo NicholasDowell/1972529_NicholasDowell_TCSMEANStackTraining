@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+    var socket = io();
+    
+    function func(){
+        //recieve value using <document class="getElementById.value
+        // that value you can emit to the server.
+        console.log("3");
+        return 3;
+    }
+    function greetUser(){
+        socket.emit("greet", document.getElementById("uname").value, document.getElementById("utext").value);
+    }
+    socket.emit("sampleAction","YourNameHere");//This emits an Action, and a Parameter for a function.
+        //greet is the action, YourNameHere is the object passed to the field.
+    function saveChatToLog(){
+        socket.emit("logchat",  document.getElementById("uname").value, document.getElementById("utext").value)
+    }
+    </script>
+</head>
+<body>
+    
+    Name: <input type="text" id="uname"/><br/>
+    Message: <textarea id="utext" rows="7", cols="39"></textarea><br/>
+    Press to save message inside MongoDB! 
+    <input type="button" value="click Here" onclick="saveChatToLog()"/>
+    
+</body>
+</html>
