@@ -1,0 +1,4 @@
+[
+    {"source":"222-555-6723","destination":"772-771-7700","source_location":"San Jose","destination_location":"Santa Clara", "call_duration":12, "roaming":false, "call_charge":0.60},
+    {"source":"234-078-6723","destination":"332-541-3300","source_location":"San Diego","destination_location":"San Ramon", "call_duration":18, "roaming":false, "call_charge":0.78}
+]
