@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Courses</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+    var socket = io();
+    function fetchCourses(){
+        socket.emit("fetch");
+    }
+    socket.on("gotItems", (courses) =>{
+        populateTable(courses);
+    })
+    function populateTable(){
+        console.log("Fetching Course Table!!");
+        //table = document.getElementById("tableArea");
+        
+    }
+    </script>
+</head>
+<body>
+    <h1>Course Portal</h1>
+    <h2>Update Course</h2>
+    <a href="/">Go Back</a>
+    <form onsubmit="fetchCourses()">
+        <input type="submit" value="Show All Courses">
+    </form>
+    <div id="tableArea"></div>
+</body>
+</html>

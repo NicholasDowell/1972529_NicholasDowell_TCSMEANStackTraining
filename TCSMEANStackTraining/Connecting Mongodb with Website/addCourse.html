@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Courses</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+    var socket = io();
+    function greetUser(){
+        socket.emit("greet", document.getElementById("uname").value, document.getElementById("utext").value);
+    }
+    function addCourse(){
+        socket.emit("add", document.getElementById("cid").value, document.getElementById("cName").value, document.getElementById("cDesc").value, document.getElementById("cost").value);
+    }
+    </script>
+</head>
+<body>
+    <h1>Course Portal</h1>
+    <h2>Add new Course</h2>
+    <a href="/">Go Back</a>
+    <form onsubmit="addCourse()">
+        <label>Course ID</label>
+        <input type="text" name="" id="cid"><br>
+        <label>Course Name</label>
+        <input type="text" name="" id="cName"><br>
+        <label>Course Description</label>
+        <input type="text" name="" id="cDesc"><br>
+        <label>Course Cost</label>
+        <input type="text" name="" id="cost"><br>
+        <input type="submit" value="Add Course">
+    </form>
+</body>
+</html>
